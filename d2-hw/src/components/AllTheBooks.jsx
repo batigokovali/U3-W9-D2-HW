@@ -11,7 +11,7 @@ class AllTheBooks extends Component {
                     
                     {FantasyBooks.map((books) => {
                         return (
-                            <Col lg={2} md={6} xs={12} className="d-flex justify-content-center px-0">
+                            <Col key={books.img} lg={2} md={6} xs={12} className="d-flex justify-content-center px-0">
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img key={books.img} variant="top" src={books.img} />
                             </Card>
@@ -20,11 +20,11 @@ class AllTheBooks extends Component {
                     }
                     )
                     }
-                      </Row>  
+                    </Row>  
                 </Container>
         );
-      }
+    }
 }
-   
+
 
 export default AllTheBooks;
